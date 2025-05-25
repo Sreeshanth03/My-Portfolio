@@ -1,0 +1,71 @@
+/* dark-theme.css */
+
+.app-dark-bg {
+  background-color: #121212; /* very dark gray/black */
+  color: #e0e0e0; /* light gray text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Links styling */
+a {
+  color: #f39c12; /* amber accent */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f1c40f; /* lighter amber */
+}
+
+/* General button styles */
+button {
+  background-color: #1f2937; /* dark slate */
+  color: #f39c12;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f39c12;
+  color: #121212;
+}
+
+/* Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f39c12;
+  border-radius: 10px;
+  border: 2px solid #121212;
+}
+
+/* Card / section containers */
+.section-container {
+  background-color: #1e1e1e; /* slightly lighter black */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+  margin-bottom: 2rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #f39c12;
+  text-shadow: 0 0 8px rgba(243, 156, 18, 0.6);
+}
+
+/* Paragraphs */
+p {
+  color: #ccc;
+  line-height: 1.6;
+}
