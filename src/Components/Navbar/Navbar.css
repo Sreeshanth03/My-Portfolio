@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar gradient and backdrop */
 .navbar-gradient {
   background: linear-gradient(90deg, rgba(17, 24, 39, 0.9) 0%, rgba(17, 24, 39, 0.95) 100%);
   backdrop-filter: blur(10px);
@@ -25,11 +25,17 @@
   list-style: none;
 }
 
+/* Make links always visible on mobile */
+.navbar-links li {
+  display: inline-block;
+}
+
 .navbar-link {
   text-decoration: none;
   font-weight: 500;
   position: relative;
   padding: 0.5rem 0;
+  color: white;
 }
 
 .navbar-link.active {
@@ -71,18 +77,33 @@
   display: inline-block;
 }
 
-/* Add media queries for responsiveness */
+/* Responsive design */
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
+    align-items: flex-start;
     padding: 1rem;
   }
-  
+
   .navbar-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically on mobile */
+    width: 100%;
     margin-top: 1rem;
     gap: 1rem;
   }
-  
+
+  .navbar-links li {
+    width: 100%;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
   .welcome-message {
     font-size: 2rem;
   }
